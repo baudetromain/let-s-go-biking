@@ -14,4 +14,9 @@ public class Station
     public int available_bikes { get; set; }
     public string status { get; set; }
     public long last_update { get; set; }
+
+    public double distance_to(double lat, double lng)
+    {
+        return Math.Sqrt(Math.Pow(this.position.lat - lat, 2) + Math.Pow(this.position.lng - lng, 2));
+    }
 }

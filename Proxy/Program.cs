@@ -40,5 +40,24 @@ namespace Proxy
             clock.Stop();
             Console.WriteLine($"Retrieved {stations.Count} stations in {clock.Elapsed.Milliseconds}ms !");
         }
+
+        private static Station getClosestStation(double lat, double lng)
+        {
+            Station closest_station = null;
+            double best_distance = -1;
+            
+            foreach (var station in stations)
+            {
+                double distance = station.distance_to(lat, lng);
+                
+                if (best_distance < 0 || distance < best_distance)
+                {
+                    closest_station = station;
+                    best_distance = distance;
+                }
+            }
+
+            return closest_station;
+        }
     }
 }
