@@ -1,4 +1,4 @@
-﻿namespace Proxy.models;
+﻿namespace RoutingServer.models;
 
 public class Position
 {
