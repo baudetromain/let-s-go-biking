@@ -1,10 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{685E5042-DDCB-4FB6-A4B9-E62462C2ADC0}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutingServer", "RoutingServer\RoutingServer.csproj", "{1DB1C71A-020C-4485-A84A-6DF4C0129AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingServer", "RoutingServer\RoutingServer.csproj", "{1DB1C71A-020C-4485-A84A-6DF4C0129AA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightClient", "LightClient\LightClient.csproj", "{179332AE-DFBE-449C-8330-49BD1CAB2924}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightClient", "LightClient\LightClient.csproj", "{179332AE-DFBE-449C-8330-49BD1CAB2924}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{17F7C220-A8E6-4F7E-9B74-9F83D291E417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing\Routing.csproj", "{1D13AD95-655C-47B2-801D-F127E57BEECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeavyClient", "HeavyClient\HeavyClient.csproj", "{E8655C78-070C-485C-878C-0B5B4B544583}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D13AD95-655C-47B2-801D-F127E57BEECE} = {1D13AD95-655C-47B2-801D-F127E57BEECE}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{685E5042-DDCB-4FB6-A4B9-E62462C2ADC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{685E5042-DDCB-4FB6-A4B9-E62462C2ADC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{685E5042-DDCB-4FB6-A4B9-E62462C2ADC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{685E5042-DDCB-4FB6-A4B9-E62462C2ADC0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1DB1C71A-020C-4485-A84A-6DF4C0129AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1DB1C71A-020C-4485-A84A-6DF4C0129AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DB1C71A-020C-4485-A84A-6DF4C0129AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -24,5 +30,23 @@ Global
 		{179332AE-DFBE-449C-8330-49BD1CAB2924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{179332AE-DFBE-449C-8330-49BD1CAB2924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179332AE-DFBE-449C-8330-49BD1CAB2924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F7C220-A8E6-4F7E-9B74-9F83D291E417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F7C220-A8E6-4F7E-9B74-9F83D291E417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F7C220-A8E6-4F7E-9B74-9F83D291E417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F7C220-A8E6-4F7E-9B74-9F83D291E417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D13AD95-655C-47B2-801D-F127E57BEECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D13AD95-655C-47B2-801D-F127E57BEECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D13AD95-655C-47B2-801D-F127E57BEECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D13AD95-655C-47B2-801D-F127E57BEECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8655C78-070C-485C-878C-0B5B4B544583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8655C78-070C-485C-878C-0B5B4B544583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8655C78-070C-485C-878C-0B5B4B544583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8655C78-070C-485C-878C-0B5B4B544583}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AF5EEAB-3C37-43D4-BB3A-925C4C507182}
 	EndGlobalSection
 EndGlobal
